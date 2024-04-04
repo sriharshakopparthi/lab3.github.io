@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tip Calculator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center h-100">
+        <div class="card text-center mt-5">
+            <h1 class="display-5 pb-3">Tip Calculator</h1>
+            <form id="tipCalculatorForm">
+                <div class="form-group">
+                    <div class="input-group">
+                        <label for="billTotalInput">Bill Total:</label>
+                        <span class="input-group-addon">$</span>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="billTotalInput"
+                            min="0"
+                            step="0.01"
+                            placeholder="Total Bill"
+                        />
+                    </div>
+                </div>
+                <div class="form-group tipPercentage">
+                    <div class="input-group">
+                        <label for="tipRangeInput">Tip:</label>
+                        <input
+                            type="range"
+                            class="form-control"
+                            id="tipRangeInput"
+                            value="0"
+                        />
+                        <span class="input-group-addon" id="tipOutputText"></span>
+                    </div>
+                </div>
+            </form>
+            <div id="resultsSection" class="pt-4">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Tip amount</span>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="tipAmountOutput"
+                            disabled
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">Total Bill with Tip</span>
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="totalBillWithTipOutput"
+                            disabled
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
